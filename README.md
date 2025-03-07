@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+## Sobre o Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- **Objetivo:**  
+  Desenvolver uma tabela responsiva que exibe dados de uma API simulada (json-server).
 
-Currently, two official plugins are available:
+- **Funcionalidades:**  
+  - Exibição de colunas: imagem (thumb), nome, cargo, data de admissão e telefone.  
+  - Pesquisa na tabela por nome, cargo e telefone.  
+  - Formatação de datas e telefones no front-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Mockup:**  
+  Baseado no projeto Figma disponibilizado, seguindo padrões visuais para desktop e mobile.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React + Vite:** Ambiente de desenvolvimento rápido e moderno para aplicações React.  
+- **Sass/SCSS:** Utilizado pela sua modularidade, escalabilidade e facilidade na manutenção de estilos.  
+- **Jest:** Framework de testes para garantir qualidade e confiabilidade do código.  
+- **json-server:** Simula uma API REST para fornecer os dados da tabela.  
+- **TypeScript:** (Diferencial) Tipagem estática para robustez e melhor manutenção do código.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Arquitetura e Organização
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Componentização:**  
+  Cada parte da interface foi dividida em componentes React reutilizáveis.
+
+- **Hooks Personalizados:**  
+  Lógica de filtragem e outros comportamentos encapsulados em hooks para melhor organização.
+
+- **Estilização:**  
+  Utilização de Sass/SCSS para criar estilos, facilitando a escalabilidade.
+
+- **Testes:**  
+  Testes unitários e de integração foram implementados com Jest e React Testing Library para validar funcionalidades críticas.
+
+---
+
+## Como Executar
+
+### Pré-requisitos
+
+- Git  
+- Node.js (v14 ou superior)  
+- Yarn ou npm  
+- json-server
+
+### Instalação
+
+1. **Clone o repositório:**
+
+   ```bash
+   git clone https://github.com/alex-s1s/be-talent-frontend.git
+   cd nome-do-repositorio
+   ```
+
+2. **Instale as dependências:**
+
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+### Iniciando a API Simulada
+
+- Execute o json-server:
+
+  ```bash
+  npx json-server --watch db.json
+  ```
+
+  > **Observação:** Certifique-se de que o arquivo `db.json` esteja na raiz do projeto.
+
+### Executando a Aplicação
+
+- Inicie o projeto:
+
+  ```bash
+  npm run dev
+  # ou
+  yarn dev
+  ```
+
+- Acesse em: `http://localhost:3000` (ou a porta configurada pelo Vite).
+
+### Executando os Testes
+
+- Rode os testes com:
+
+  ```bash
+  npm run test
+  # ou
+  yarn test
+  ```
+
+---
