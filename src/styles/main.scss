@@ -1,0 +1,42 @@
+@use 'spacing' as spacing;
+@use 'typography' as typography;
+@use 'variables' as variables;
+@use 'shadows' as shadows;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto|Helvetica&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: typography.$font-family-base;
+  background-color: variables.$gray-00;
+}
+
+h1 {
+  font-family: typography.$h1-font-family;
+  font-weight: typography.$h1-font-weight;
+  font-size: typography.$h1-font-size;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: typography.$h2-font-family;
+  font-weight: typography.$h2-font-weight;
+  font-size: typography.$h2-font-size;
+  line-height: 32px;
+}
+
+h3 {
+  font-family: typography.$h3-font-family;
+  font-weight: typography.$h3-font-weight;
+  font-size: typography.$h3-font-size;
+  line-height: 24px;
+}
+
+.container {
+  padding: 0px spacing.$spacing-medium spacing.$spacing-medium spacing.$spacing-medium;
+
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,77 @@
+@use '../variables' as variables;
+
+.skeleton {
+  opacity: 0.7;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-table {
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.skeleton-cell {
+  padding: 12px 20px 12px 0;
+  text-align: left;
+}
+
+.skeleton-photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: variables.$gray-00;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-content {
+  background: variables.$gray-00;
+  height: 16px;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: variables.$gray-05;
+  }
+
+  50% {
+    background-color: variables.$gray-10;
+  }
+
+  100% {
+    background-color: variables.$gray-05;
+  }
+}
+
+@media (max-width: 768px) {
+  .skeleton-row {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid variables.$gray-10;
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .skeleton-cell {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+
+    &.collapsible {
+      display: none;
+    }
+  }
+
+  .skeleton-photo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .skeleton-content {
+    height: 14px;
+  }
+}

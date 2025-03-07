@@ -1,0 +1,116 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Giovana L. Arruda",
+      "role": "Front-end",
+      "date": "2023-05-15",
+      "photo": "https://randomuser.me/api/portraits/women/1.jpg",
+      "phone": "5555555555555"
+    },
+    {
+      "id": 2,
+      "name": "Vanessa Machado",
+      "role": "Front-end",
+      "date": "2022-11-20",
+      "photo": "https://randomuser.me/api/portraits/women/2.jpg",
+      "phone": "5555555555556"
+    },
+    {
+      "id": 3,
+      "name": "Juliana Borba",
+      "role": "Front-end",
+      "date": "2021-03-10",
+      "photo": "https://randomuser.me/api/portraits/women/3.jpg",
+      "phone": "5555555555557"
+    },
+    {
+      "id": 4,
+      "name": "Carlos Silva",
+      "role": "Desenvolvedor",
+      "date": "2020-07-25",
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg",
+      "phone": "5555555555558"
+    },
+    {
+      "id": 5,
+      "name": "Mariana Costa",
+      "role": "Designer",
+      "date": "2019-09-12",
+      "photo": "https://randomuser.me/api/portraits/women/4.jpg",
+      "phone": "5555555555559"
+    },
+    {
+      "id": 6,
+      "name": "Rafael Souza",
+      "role": "Back-end",
+      "date": "2021-06-18",
+      "photo": "https://randomuser.me/api/portraits/men/2.jpg",
+      "phone": "5555555555560"
+    },
+    {
+      "id": 7,
+      "name": "Ana Pereira",
+      "role": "Gerente de Projetos",
+      "date": "2022-01-05",
+      "photo": "https://randomuser.me/api/portraits/women/5.jpg",
+      "phone": "5555555555561"
+    },
+    {
+      "id": 8,
+      "name": "Lucas Almeida",
+      "role": "Desenvolvedor Full-stack",
+      "date": "2020-11-30",
+      "photo": "https://randomuser.me/api/portraits/men/3.jpg",
+      "phone": "5555555555562"
+    },
+    {
+      "id": 9,
+      "name": "Fernanda Lima",
+      "role": "Analista de QA",
+      "date": "2023-02-14",
+      "photo": "https://randomuser.me/api/portraits/women/6.jpg",
+      "phone": "5555555555563"
+    },
+    {
+      "id": 10,
+      "name": "Pedro Oliveira",
+      "role": "DevOps",
+      "date": "2019-12-20",
+      "photo": "https://randomuser.me/api/portraits/men/4.jpg",
+      "phone": "5555555555564"
+    },
+    {
+      "id": 11,
+      "name": "Beatriz Santos",
+      "role": "UI/UX Designer",
+      "date": "2022-08-10",
+      "photo": "https://randomuser.me/api/portraits/women/7.jpg",
+      "phone": "5555555555565"
+    },
+    {
+      "id": 12,
+      "name": "João Ferreira",
+      "role": "Gerente de TI",
+      "date": "2021-04-15",
+      "photo": "https://randomuser.me/api/portraits/men/5.jpg",
+      "phone": "5555555555566"
+    },
+    {
+      "id": 13,
+      "name": "Camila Ribeiro",
+      "role": "Front-end",
+      "date": "2023-03-25",
+      "photo": "https://randomuser.me/api/portraits/women/8.jpg",
+      "phone": "5555555555567"
+    },
+    {
+      "id": 14,
+      "name": "Thiago Mendes",
+      "role": "Back-end",
+      "date": "2020-10-05",
+      "photo": "https://randomuser.me/api/portraits/men/6.jpg",
+      "phone": "5555555555568"
+    }
+  ]
+}
