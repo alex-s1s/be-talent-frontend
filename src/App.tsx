@@ -1,7 +1,7 @@
-import Layout from './components/Layout/layout'
-import Table from './components/Table/Table'
+import Layout from './components/Layout/Layout';
+import Table from './components/Table/Table';
 
-import './styles/main.scss'
+import './styles/main.scss';
 
 function App() {
 

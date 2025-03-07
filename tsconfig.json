@@ -5,21 +5,22 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "composite": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "jsx": "react-jsx",
+    "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "node",
-    "target": "es6",
+    "jsx": "react-jsx",
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "emitDeclarationOnly": false,
-    "types": ["node", "jest",  "globals.d.ts", "vite/client"],
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "types": ["node", "jest", "globals.d.ts", "vite/client"],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@public/*": ["public/*"]
     }
-  },
+  }
 }
